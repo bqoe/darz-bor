@@ -1,3 +1,6 @@
+import "./styles/index.scss"
+import 'bootstrap'
+
 let headerElement = document.querySelector("header")
 
 document.addEventListener("scroll", () => {
