@@ -1,5 +1,184 @@
-$body-color: pink;
-
+/* 
++++++++++++++++++++++
+reset 
++++++++++++++++++++++
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  color: $body-color;
-} 
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 
++++++++++++++++++++++
+global styles 
++++++++++++++++++++++
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    height: 400vh;
+}
+a {
+    text-decoration: none !important;
+}
+p {
+    font-size: 15px;
+    line-height: 30px;
+    color: #2a2a2a;
+  }
+  /* 
++++++++++++++++++++++
+global styles 
++++++++++++++++++++++
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    height: 400vh;
+}
+a {
+    text-decoration: none !important;
+}
+p {
+    font-size: 15px;
+    line-height: 30px;
+    color: #2a2a2a;
+  }
+/* 
++++++++++++++++++++++
+header
++++++++++++++++++++++
+*/
+.header-area {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    background: transparent;
+    transition: all .5s ease 0s;
+    padding: 0 5em;
+    
+}
+.header-area .main-nav {
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+.nav {
+    visibility: hidden;
+}
+.header-area .main-nav .nav li {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.header-area .main-nav .nav li a {
+    display: block;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.header-area .main-nav .nav li:hover a,
+.header-area .main-nav .nav li a.active {
+  color: white;
+}
+.header-area .main-nav .nav li a.active {
+    font-weight: 700;
+}
+/* header on scroll */
+.background-header {
+    background-color: white;
+    height: 80px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.15)!important;
+}
+.background-header .logo,
+.background-header .main-nav .nav li a {
+  color: #1e1e1e;
+}
+.background-header .main-nav .nav li a.active,
+.background-header .main-nav .nav li:hover a {
+    color: darkgray
+}
+/* 
++++++++++++++++++++++
+main
++++++++++++++++++++++
+*/
+.main-banner {
+    // background-image: url(../images/banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 290px 0px 180px 0px;
+}
+.header-text {
+    color: white;
+}
+.header-text h2 {
+    font-size: 2.5em;
+    padding: .25em 0;
+    font-weight: 600
+}
+.header-text h3 {
+    font-size: 1.25em;
+}
+/* 
++++++++++++++++++++++
+
++++++++++++++++++++++
+*/
+
+@media (min-width: 800px) {
+    .nav { visibility: visible}
+    .dropdown {visibility: hidden}
+}
