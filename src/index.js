@@ -1,5 +1,5 @@
-import "./styles/index.scss"
-import 'bootstrap'
+import {createRoot } from 'react-dom';
+import App from './components/App'
 
 let headerElement = document.querySelector("header")
 
@@ -13,7 +13,5 @@ document.addEventListener("scroll", () => {
     
 })
 
-if (screen.width < 770) {
-    let dropdownElement = document.querySelector('a.menu-trigger');
-    
-}
+const footerRoot = createRoot(document.getElementById('footer'));
+footerRoot.render(<App />)

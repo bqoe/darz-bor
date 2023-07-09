@@ -5,7 +5,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/i,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
@@ -32,6 +32,9 @@ module.exports = {
                 type: "asset/resource"
             },
         ]
+    },
+    resolve: {
+        extensions: ['.js', '.jsx']
     },
     devServer: {
         static: {
