@@ -1,0 +1,39 @@
+$hoverTransitionSpeed: .2s;
+$brown: #352F29;
+$blueLight: #C2C4BE;
+$blue: #92A3AD;
+$blueDark: #7F8F9A;
+
+.footers {
+    background-color: $brown;
+    color: white !important;
+    line-height: 1.4em;
+    .mainFooter {
+        min-height: 9em;
+        h1 {
+            padding-bottom: .5em;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        h1.h1DarzBor {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+    }
+    .postFooter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3em;
+        a {
+            color: orange;
+            transition: $hoverTransitionSpeed;
+        }
+        a:hover {
+            color: burlywood;
+            transition: $hoverTransitionSpeed;
+        }
+    }
+}

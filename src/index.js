@@ -1,5 +1,6 @@
-import {createRoot } from 'react-dom';
-import App from './components/App'
+import {createRoot } from 'react-dom/client';
+import Footer from './components/Footer'
+import "./styles/index.scss"
 
 let headerElement = document.querySelector("header")
 
@@ -14,4 +15,4 @@ document.addEventListener("scroll", () => {
 })
 
 const footerRoot = createRoot(document.getElementById('footer'));
-footerRoot.render(<App />)
+footerRoot.render(<Footer />)

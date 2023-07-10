@@ -50,26 +50,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* 
-+++++++++++++++++++++
-global styles 
-+++++++++++++++++++++
-*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-html {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    height: 400vh;
-}
-a {
-    text-decoration: none !important;
-}
-p {
-    font-size: 15px;
-    line-height: 30px;
-    color: #2a2a2a;
-  }
   /* 
 +++++++++++++++++++++
 global styles 
@@ -87,8 +67,7 @@ a {
 }
 p {
     font-size: 15px;
-    line-height: 30px;
-    color: #2a2a2a;
+    // line-height: 30px;
   }
 /* 
 +++++++++++++++++++++
@@ -174,7 +153,32 @@ main
 }
 /* 
 +++++++++++++++++++++
+welcome page
++++++++++++++++++++++
+*/
+div.welcomeDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    min-height: 20em; 
+    div.welcome {
+        max-width: 40em;
+        margin: 5em 10em;
+        p#welcomeP {
+            padding-bottom: 1em;
+            font-weight: 500;
+        }
+        p {
+            font-size: 1.3em;
+            line-height: 1.3em;
+        }
+    }    
+}   
 
+/* 
++++++++++++++++++++++
+media queries
 +++++++++++++++++++++
 */
 
