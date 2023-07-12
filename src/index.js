@@ -1,6 +1,7 @@
 import {createRoot } from 'react-dom/client';
 import Footer from './components/Footer'
 import "./styles/index.scss"
+// import './pages/historia.html'
 
 let headerElement = document.querySelector("header")
 

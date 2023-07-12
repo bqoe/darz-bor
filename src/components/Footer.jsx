@@ -1,8 +1,7 @@
 import React from 'react';
 import '../styles/footer.scss';
 
-const Footer = (props) => {
-    console.log(props.name);
+const Footer = () => {
     return (
         <div className="footers">
             <div className="mainFooter py-5 container">

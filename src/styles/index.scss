@@ -164,25 +164,39 @@ div.welcomeDiv {
     min-height: 20em; 
     div.welcome {
         max-width: 40em;
-        margin: 5em 10em;
+        margin: 2em 2em 0;
         p#welcomeP {
-            padding-bottom: 1em;
             font-weight: 500;
         }
         p {
             font-size: 1.3em;
             line-height: 1.3em;
+            padding-bottom: 1em;
         }
     }    
-}   
+}
+div.outerFbPage {
+    display: flex;
+    justify-content: center; 
+    margin: 0 0 5em;
+    div.fbPageWidth {
+        width: 250px;
+    }   
+}
+
+
 
 /* 
 +++++++++++++++++++++
 media queries
 +++++++++++++++++++++
 */
+@media (min-width: 500px) {
+    div.fbPageWidth {width: 400px !important}
+}
 
 @media (min-width: 800px) {
     .nav { visibility: visible}
     .dropdown {visibility: hidden}
+    div.fbPageWidth {width: 500px !important}
 }
