@@ -162,9 +162,10 @@ div.welcomeDiv {
     justify-content: center;
     align-items: center;   
     min-height: 20em; 
+    margin: 2em 2em;
     div.welcome {
         max-width: 40em;
-        margin: 2em 2em 0;
+        
         p#welcomeP {
             font-weight: 500;
         }
@@ -176,9 +177,9 @@ div.welcomeDiv {
     }    
 }
 div.outerFbPage {
+    padding-top: 1em;
     display: flex;
     justify-content: center; 
-    margin: 0 0 5em;
     div.fbPageWidth {
         width: 250px;
     }   
@@ -193,10 +194,12 @@ media queries
 */
 @media (min-width: 500px) {
     div.fbPageWidth {width: 400px !important}
+    div.welcomeDiv {margin: 3em 5em}
 }
 
 @media (min-width: 800px) {
     .nav { visibility: visible}
-    .dropdown {visibility: hidden}
+    .dropdown {visibility: hidden};
+    div.welcomeDiv {margin: 5em 10em}
     div.fbPageWidth {width: 500px !important}
 }
