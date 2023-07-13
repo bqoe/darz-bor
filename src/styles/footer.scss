@@ -21,6 +21,12 @@ $blueDark: #7F8F9A;
             font-size: 1.8em;
             font-weight: 700;
         }
+        div.nav {
+            li {
+                a {color: $blueLight !important}
+            }
+            
+        }
     }
     .postFooter {
         display: flex;

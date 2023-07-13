@@ -71,65 +71,6 @@ p {
   }
 /* 
 +++++++++++++++++++++
-header
-+++++++++++++++++++++
-*/
-.header-area {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    height: 100px;
-    background: transparent;
-    transition: all .5s ease 0s;
-    padding: 0 5em;
-    
-}
-.header-area .main-nav {
-    min-height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0px;
-}
-.nav {
-    visibility: hidden;
-}
-.header-area .main-nav .nav li {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.header-area .main-nav .nav li a {
-    display: block;
-    color: rgb(51, 51, 51);
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-.header-area .main-nav .nav li:hover a,
-.header-area .main-nav .nav li a.active {
-  color: white;
-}
-.header-area .main-nav .nav li a.active {
-    font-weight: 700;
-}
-/* header on scroll */
-.background-header {
-    background-color: white;
-    height: 80px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.15)!important;
-}
-.background-header .logo,
-.background-header .main-nav .nav li a {
-  color: #1e1e1e;
-}
-.background-header .main-nav .nav li a.active,
-.background-header .main-nav .nav li:hover a {
-    color: rgb(134, 134, 134)
-}
-/* 
-+++++++++++++++++++++
 main
 +++++++++++++++++++++
 */
