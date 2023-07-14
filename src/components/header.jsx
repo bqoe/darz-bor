@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../styles/header.scss";
 
-const header = () => {
+const Header = () => {
   useEffect(() => {
     let headerElement = document.querySelector("header");
     document.addEventListener("scroll", () => {
@@ -50,4 +50,4 @@ const header = () => {
   )
 }
 
-export default header;
+export default Header;

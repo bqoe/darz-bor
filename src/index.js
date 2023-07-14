@@ -1,10 +1,10 @@
 import {createRoot } from 'react-dom/client';
-import header from './components/header';
-import footer from './components/footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import "./styles/index.scss"
 
 const headerRoot = createRoot(document.getElementById('header'));
-headerRoot.render(<header />);
+headerRoot.render(<Header />);
 
 const footerRoot = createRoot(document.getElementById('footer'));
-footerRoot.render(<footer />);
+footerRoot.render(<Footer />);
