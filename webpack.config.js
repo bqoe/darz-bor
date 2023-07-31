@@ -48,15 +48,15 @@ module.exports = {
             template: './src/index.html'
         }),
         new HtmlWebpackPlugin({
-            filename: 'historia.html',
+            filename: './pages/historia.html',
             template: './src/pages/historia.html'
         }),
         new HtmlWebpackPlugin({
-            filename: 'kontakt.html',
+            filename: './pages/kontakt.html',
             template: './src/pages/kontakt.html'
         }),
         new HtmlWebpackPlugin({
-            filename: 'prawo.html',
+            filename: './pages/prawo.html',
             template: './src/pages/prawo.html'
         }),
     ],
